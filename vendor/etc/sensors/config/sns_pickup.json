@@ -1,0 +1,28 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "DAVINCI", "Surf", "POLARIS", "URSA", "DIPPER", "PERSEUS", "AQUILA", "IDP"
+    ],
+    "soc_id": [
+      "365", "246", "305", "321", "339", "407", "443"
+    ]
+  },
+  "sns_pickup": {
+    "owner": "sns_pickup",
+    ".params":{
+      "owner": "sns_pickup",
+        "param1": {
+          "ver": "2", "type": "flt", "data": "3"
+        },
+        "param2": {
+          "ver": "2", "type": "flt", "data": "27"
+        },
+        "param3": {
+          "ver": "2", "type": "flt", "data": "3000"
+        },
+        "param4": {
+          "ver": "2", "type": "flt", "data": "0"
+        }
+      }
+  }
+}
