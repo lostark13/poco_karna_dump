@@ -1,0 +1,229 @@
+/dts-v1/;
+
+/ {
+	model = "Qualcomm Technologies, Inc. IPQ8074-HK01";
+	compatible = "qcom,ipq8074-hk01\0qcom,ipq8074";
+	#address-cells = <0x02>;
+	#size-cells = <0x02>;
+	interrupt-parent = <0x01>;
+
+	soc {
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		ranges = <0x00 0x00 0x00 0xffffffff>;
+		compatible = "simple-bus";
+		phandle = <0x05>;
+
+		pinctrl@1000000 {
+			compatible = "qcom,ipq8074-pinctrl";
+			reg = <0x1000000 0x300000>;
+			interrupts = <0x00 0xd0 0x04>;
+			gpio-controller;
+			#gpio-cells = <0x02>;
+			interrupt-controller;
+			#interrupt-cells = <0x02>;
+
+			serial4_pinmux {
+				phandle = <0x03>;
+
+				mux {
+					pins = "gpio23\0gpio24";
+					function = "blsp4_uart1";
+					bias-disable;
+				};
+			};
+		};
+
+		interrupt-controller@b000000 {
+			compatible = "qcom,msm-qgic2";
+			interrupt-controller;
+			#interrupt-cells = <0x03>;
+			reg = <0xb000000 0x1000 0xb002000 0x1000>;
+			phandle = <0x01>;
+		};
+
+		timer {
+			compatible = "arm,armv8-timer";
+			interrupts = <0x01 0x02 0xf08 0x01 0x03 0xf08 0x01 0x04 0xf08 0x01 0x01 0xf08>;
+		};
+
+		timer@b120000 {
+			#address-cells = <0x01>;
+			#size-cells = <0x01>;
+			ranges;
+			compatible = "arm,armv7-timer-mem";
+			reg = <0xb120000 0x1000>;
+			clock-frequency = <0x124f800>;
+
+			frame@b120000 {
+				frame-number = <0x00>;
+				interrupts = <0x00 0x08 0x04 0x00 0x07 0x04>;
+				reg = <0xb121000 0x1000 0xb122000 0x1000>;
+			};
+
+			frame@b123000 {
+				frame-number = <0x01>;
+				interrupts = <0x00 0x09 0x04>;
+				reg = <0xb123000 0x1000>;
+				status = "disabled";
+			};
+
+			frame@b124000 {
+				frame-number = <0x02>;
+				interrupts = <0x00 0x0a 0x04>;
+				reg = <0xb124000 0x1000>;
+				status = "disabled";
+			};
+
+			frame@b125000 {
+				frame-number = <0x03>;
+				interrupts = <0x00 0x0b 0x04>;
+				reg = <0xb125000 0x1000>;
+				status = "disabled";
+			};
+
+			frame@b126000 {
+				frame-number = <0x04>;
+				interrupts = <0x00 0x0c 0x04>;
+				reg = <0xb126000 0x1000>;
+				status = "disabled";
+			};
+
+			frame@b127000 {
+				frame-number = <0x05>;
+				interrupts = <0x00 0x0d 0x04>;
+				reg = <0xb127000 0x1000>;
+				status = "disabled";
+			};
+
+			frame@b128000 {
+				frame-number = <0x06>;
+				interrupts = <0x00 0x0e 0x04>;
+				reg = <0xb128000 0x1000>;
+				status = "disabled";
+			};
+		};
+
+		gcc@1800000 {
+			compatible = "qcom,gcc-ipq8074";
+			reg = <0x1800000 0x80000>;
+			#clock-cells = <0x01>;
+			#reset-cells = <0x01>;
+			phandle = <0x02>;
+		};
+
+		serial@78b3000 {
+			compatible = "qcom,msm-uartdm-v1.4\0qcom,msm-uartdm";
+			reg = <0x78b3000 0x200>;
+			interrupts = <0x00 0x134 0x04>;
+			clocks = <0x02 0x26 0x02 0x15>;
+			clock-names = "core\0iface";
+			status = "ok";
+			pinctrl-0 = <0x03>;
+			pinctrl-names = "default";
+			phandle = <0x06>;
+		};
+	};
+
+	cpus {
+		#address-cells = <0x01>;
+		#size-cells = <0x00>;
+
+		cpu@0 {
+			device_type = "cpu";
+			compatible = "arm,cortex-a53\0arm,armv8";
+			reg = <0x00>;
+			next-level-cache = <0x04>;
+			enable-method = "psci";
+			phandle = <0x07>;
+		};
+
+		cpu@1 {
+			device_type = "cpu";
+			compatible = "arm,cortex-a53\0arm,armv8";
+			enable-method = "psci";
+			reg = <0x01>;
+			next-level-cache = <0x04>;
+			phandle = <0x08>;
+		};
+
+		cpu@2 {
+			device_type = "cpu";
+			compatible = "arm,cortex-a53\0arm,armv8";
+			enable-method = "psci";
+			reg = <0x02>;
+			next-level-cache = <0x04>;
+			phandle = <0x09>;
+		};
+
+		cpu@3 {
+			device_type = "cpu";
+			compatible = "arm,cortex-a53\0arm,armv8";
+			enable-method = "psci";
+			reg = <0x03>;
+			next-level-cache = <0x04>;
+			phandle = <0x0a>;
+		};
+
+		l2-cache {
+			compatible = "cache";
+			cache-level = <0x02>;
+			phandle = <0x04>;
+		};
+	};
+
+	psci {
+		compatible = "arm,psci-1.0";
+		method = "smc";
+	};
+
+	pmu {
+		compatible = "arm,armv8-pmuv3";
+		interrupts = <0x01 0x07 0xf00>;
+	};
+
+	clocks {
+
+		sleep_clk {
+			compatible = "fixed-clock";
+			clock-frequency = <0x7d00>;
+			#clock-cells = <0x00>;
+			phandle = <0x0b>;
+		};
+
+		xo {
+			compatible = "fixed-clock";
+			clock-frequency = <0x124f800>;
+			#clock-cells = <0x00>;
+			phandle = <0x0c>;
+		};
+	};
+
+	aliases {
+		serial0 = "/soc/serial@78b3000";
+	};
+
+	chosen {
+		stdout-path = "serial0";
+	};
+
+	memory {
+		device_type = "memory";
+		reg = <0x00 0x40000000 0x00 0x20000000>;
+	};
+
+	__symbols__ {
+		soc = "/soc";
+		serial_4_pins = "/soc/pinctrl@1000000/serial4_pinmux";
+		intc = "/soc/interrupt-controller@b000000";
+		gcc = "/soc/gcc@1800000";
+		blsp1_uart5 = "/soc/serial@78b3000";
+		CPU0 = "/cpus/cpu@0";
+		CPU1 = "/cpus/cpu@1";
+		CPU2 = "/cpus/cpu@2";
+		CPU3 = "/cpus/cpu@3";
+		L2_0 = "/cpus/l2-cache";
+		sleep_clk = "/clocks/sleep_clk";
+		xo = "/clocks/xo";
+	};
+};
