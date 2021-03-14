@@ -1,0 +1,5 @@
+<!--
+    Input:
+        odm_manifest_karna.xml
+-->
+<manifest version="2.0" type="device" target-level="4"/>
