@@ -204,6 +204,7 @@
 /(vendor|system/vendor)/bin/mutualex                                               u:object_r:vendor_mutualex_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service u:object_r:hal_displayfeature_xiaomi_default_exec:s0
 /(vendor|system/vendor)/bin/displayfeature                                         u:object_r:displayfeature_exec:s0
+/(vendor|system/vendor)/bin/displaycount                                           u:object_r:vendor_displaycount_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.qccvndhal@1\.0-service       u:object_r:vendor_hal_qccvndhal_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.gnss@.*-service                        u:object_r:vendor_hal_gnss_qti_exec:s0
 /(vendor|system/vendor)/bin/xtwifi-inet-agent                                      u:object_r:vendor_location_exec:s0
@@ -475,6 +476,7 @@
 /sys/devices/platform/vfb.([0-3])+/graphics/fb([0-3])+/modes        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/vfb.([0-3])+/graphics/fb([0-3])+/mode         u:object_r:vendor_sysfs_graphics:s0
 /sys/class/kgsl/kgsl/proc(/.*)?                                    u:object_r:vendor_sysfs_kgsl_proc:s0
+/data/vendor/misc/display(/.*)?                                    u:object_r:vendor_displaycount_data_file:s0
 /data/vendor/wifi/sockets(/.*)?                                     u:object_r:vendor_wifi_vendor_wpa_socket:s0
 /sys/kernel/debug/1d84000.ufshc/dump_health_desc                                         u:object_r:ufs_debugfs:s0
 /sys/kernel/debug/1d84000.ufshc/dump_device_desc                                         u:object_r:ufs_debugfs:s0
@@ -495,6 +497,8 @@
 /mnt/vendor/persist/qti_fp(/.*)?      u:object_r:vendor_persist_qti_fp_file:s0
 /mnt/vendor/persist/FTM_AP(/.*)?      u:object_r:vendor_persist_mmi_file:s0
 /mnt/vendor/persist/camera(/.*)?      u:object_r:camera_persist_file:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_count                                              u:object_r:vendor_sysfs_displaycount:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dpms                                                    u:object_r:vendor_sysfs_displaycount:s0
 /data/vendor/wifi/wlan_logs(/.*)?      u:object_r:vendor_wifi_vendor_log_data_file:s0
 /mnt/vendor/persist/display(/.*)?    u:object_r:vendor_persist_display_file:s0
 /mnt/vendor/persist/haptics(/.*)?    u:object_r:vendor_persist_haptics_file:s0
@@ -505,6 +509,7 @@
 /sys/module/msm_performance(/.*)?                                   u:object_r:vendor_sysfs_msm_perf:s0
 /sys/module/process_reclaim(/.*)?                                   u:object_r:vendor_sysfs_process_reclaim:s0
 /data/vendor/secure_element(/.*)?                                   u:object_r:vendor_secure_element_vendor_data_file:s0
+/data/local/maintenance_mode(/.*)?                                        u:object_r:auto_test_file:s0
 /data/vendor/netmgr/recovery(/.*)?     u:object_r:vendor_netmgr_recovery_data_file:s0
 /mnt/vendor/persist/hlos_rfs(/.*)?   u:object_r:vendor_persist_rfs_shared_hlos_file:s0
 /sys/devices/soc/soc:fpc1020.*/hw_reset                                        u:object_r:sysfs_fpc_dev:s0

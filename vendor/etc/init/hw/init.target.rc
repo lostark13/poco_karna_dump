@@ -107,6 +107,8 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     mkdir /data/vendor/touchpad 0775 system system
+    mkdir /data/vendor/misc/display 0771 system system
+    chmod 666 /sys/class/drm/card0-DSI-1/disp_count
 
 #Creat charger log
     mkdir /data/vendor/charge_logger 0771 system system
@@ -241,6 +243,12 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
+
+service displaycount /vendor/bin/displaycount
+    class late_start
+    user system
+    group system
+    oneshot
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy

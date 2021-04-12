@@ -397,8 +397,8 @@
         authtype="1"
         protocol="IPV4V6"
         roaming_protocol="IP"
-        mvno_match_data="gid"
-        mvno_type="8F"
+        mvno_type="gid"
+        mvno_match_data="8F"
     />
 
     <apn carrier="HOS"
@@ -411,8 +411,8 @@
         authtype="1"
         protocol="IPV4V6"
         roaming_protocol="IP"
-        mvno_match_data="gid"
-        mvno_type="8F"
+        mvno_type="gid"
+        mvno_match_data="8F"
     />
 
     <apn carrier="Tele2 internet"
@@ -423,8 +423,8 @@
         authtype="1"
         protocol="IPV4V6"
         roaming_protocol="IP"
-        mvno_match_data="gid"
-        mvno_type="4E4C"
+        mvno_type="gid"
+        mvno_match_data="4E4C"
     />
 
     <apn carrier="HOS"
@@ -437,8 +437,8 @@
         authtype="1"
         protocol="IPV4V6"
         roaming_protocol="IP"
-        mvno_match_data="gid"
-        mvno_type="4E4C"
+        mvno_type="gid"
+        mvno_match_data="4E4C"
     />
 
     <apn carrier="Ziggo mobiel internet"
@@ -7972,8 +7972,9 @@
         mnc="01"
         apn="ims"
         type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        authtype="3"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="life internet"
@@ -8721,7 +8722,7 @@
       protocol="IPV4V6"
       type="ims"
     />
-    <apn carrier="O2"
+    <apn carrier="o2"
         apn="internet"
         mcc="262"
         mnc="11"
@@ -9242,20 +9243,18 @@
         mnc="02"
         apn="vodafoneweb"
         password="web"
-        type="default,supl,dun"
-        user="web"
-        authtype="1"
-        protocol="IP"
-        roaming_protocol="IP"
+        type="default,supl"
     />
 
-    <apn carrier="IMS"
+    <apn carrier="VFAL MMS"
         mcc="276"
         mnc="02"
-        apn="ims"
-        type="ims"
-        protocol="IP"
-        roaming_protocol="IP"
+        apn="vfalmms"
+        password="mms"
+        mmsproxy="10.0.9.2"
+        mmsport="8080"
+        mmsc="http://mmsc.vodafone.al"
+        type="mms"
     />
 
     <apn carrier="Vodafone MT"
@@ -35176,6 +35175,86 @@
         apn="3gnet"
         type="default,supl"
         read_only ="true"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454070"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454071"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454072"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454073"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454074"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454075"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454076"
+    />
+
+    <apn carrier="China Unicom (HK)"
+        mcc="454"
+        mnc="07"
+        apn="3gnet"
+        type="default,supl"
+        read_only ="true"
+        mvno_type="imsi"
+        mvno_match_data="454077"
     />
 
     <apn carrier="China Unicom (HK)"

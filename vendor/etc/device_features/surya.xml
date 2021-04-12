@@ -265,6 +265,8 @@
     <integer name="type_soter_finger_pay">2</integer>
     <!-- finger record, config by owner -->
     <integer name="type_mqs_finger_record">3</integer>
+    <!-- wheter the device support widevine l1, 1: support, 2: ota_support -->
+    <integer name="support_widevine_l1">2</integer>
     <!--wheater the device supports persist screen color in driver-->
     <bool name="support_screen_color_persist">true</bool>
     <!--cpu combination -->

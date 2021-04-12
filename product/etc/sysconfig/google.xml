@@ -77,4 +77,6 @@
 
     <!-- Whitelist of packages that eligible for rollback -->
     <rollback-whitelisted-app package="com.android.vending" />
+
+    <allow-in-power-save package="com.google.android.youtube"/>
 </config>

@@ -65,6 +65,7 @@ mcfg_sw/generic/eu/telia/commerci/sweden/mcfg_sw.mbn
 mcfg_sw/generic/eu/tim/commerci/italy/mcfg_sw.mbn
 mcfg_sw/generic/eu/turkcell/commerci/mcfg_sw.mbn
 mcfg_sw/generic/eu/turktele/commerci/mcfg_sw.mbn
+mcfg_sw/generic/eu/vivacom/commerci/mcfg_sw.mbn
 mcfg_sw/generic/eu/vodafone/commerci/hungary/mcfg_sw.mbn
 mcfg_sw/generic/eu/vodafone/commerci/ireland/mcfg_sw.mbn
 mcfg_sw/generic/eu/vodafone/volte/ctc/mcfg_sw.mbn

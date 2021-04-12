@@ -158,6 +158,9 @@
         <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
+    <privapp-permissions package="com.google.android.calendar">
+        <permission name="android.permission.INTERACT_ACROSS_PROFILES"/>
+    </privapp-permissions>
     <privapp-permissions package="com.google.android.configupdater">
         <permission name="android.permission.UPDATE_CONFIG"/>
     </privapp-permissions>
@@ -169,6 +172,7 @@
         <permission name="android.permission.READ_LOGS"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
         <permission name="android.permission.ACCESS_NETWORK_CONDITIONS"/>
         <permission name="android.permission.ACTIVITY_EMBEDDING"/>
         <permission name="android.permission.ALLOCATE_AGGRESSIVE"/>
@@ -238,6 +242,7 @@
         <permission name="android.permission.USE_RESERVED_DISK"/>
         <permission name="android.permission.USER_ACTIVITY"/>
         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.android.voicemail.permission.ACCESS_CONTEXT_HUB"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.googlequicksearchbox">
         <permission name="android.permission.BIND_APPWIDGET"/>
@@ -332,6 +337,7 @@
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
         <permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.INVOKE_CARRIER_SETUP"/>
         <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
         <permission name="android.permission.MANAGE_FINGERPRINT"/>
