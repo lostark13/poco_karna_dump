@@ -1,0 +1,11 @@
+system_ext/apex/com.android.vndk.v30.apex
+system_ext/priv-app/Settings/Settings.apk
+boot.img
+modem.img
+system/system/priv-app/MIBrowserGlobal/MIBrowserGlobal.apk
+system/system/priv-app/MiuiCamera/MiuiCamera.apk
+system/system/priv-app/MIUIGalleryGlobal/MIUIGalleryGlobal.apk
+system/system/app/MIUIVideoPlayer/MIUIVideoPlayer.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/Velvet/Velvet.apk
+product/app/WebViewGoogle/WebViewGoogle.apk
