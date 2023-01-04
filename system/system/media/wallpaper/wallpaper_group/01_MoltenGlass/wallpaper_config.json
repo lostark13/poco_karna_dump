@@ -1,0 +1,31 @@
+{
+    "title": "琉璃",
+    "titleResId": "wallpaper_group_molten_glass_title",
+    "subtitle":"Danny Ivan",
+    "subtitleResId":"wallpaper_group_molten_glass_subtitle",
+    "cardType": 1,
+    "count": 5,
+    "slideCount": 5,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./MoltenGlass01.jpg",
+        "originPath": "./MoltenGlass01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MoltenGlass02.jpg",
+        "originPath": "./MoltenGlass02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MoltenGlass03.jpg",
+        "originPath": "./MoltenGlass03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MoltenGlass04.jpg",
+        "originPath": "./MoltenGlass04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MoltenGlass05.jpg",
+        "originPath": "./MoltenGlass05.jpg",
+        "type": "wallpaper"
+    }]
+}

@@ -1,0 +1,30 @@
+{
+    "title": "黑色戈壁",
+    "titleResId": "wallpaper_group_black_gobi_title",
+    "subtitle":"Jonas Daley",
+    "cardType": 1,
+    "count": 5,
+    "slideCount": 5,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./BlackGobi01.jpg",
+        "originPath": "./BlackGobi01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./BlackGobi02.jpg",
+        "originPath": "./BlackGobi02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./BlackGobi03.jpg",
+        "originPath": "./BlackGobi03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./BlackGobi04.jpg",
+        "originPath": "./BlackGobi04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./BlackGobi05.jpg",
+        "originPath": "./BlackGobi05.jpg",
+        "type": "wallpaper"
+    }]
+}

@@ -1,0 +1,22 @@
+# mkdir /data/extm
+
+on post-fs-data
+    # Setup /data/extm as per_boot directory
+    exec - system system -- /bin/rm -rf /data/extm
+    mkdir /data/extm 2770 root system encryption=Require key=per_boot_ref
+    restorecon_recursive /data/extm
+
+
+# system_perf_init: after load_persist_props_action && before zygote-start
+# load_bpf_programs exsist in R, and this file runs in R while Q is init.perf_init_Q.rc
+on load_bpf_programs
+    start system_perf_init
+
+on property:system_perf_init.dex2oat-threads=*
+    setprop dalvik.vm.dex2oat-threads ${system_perf_init.dex2oat-threads}
+
+on property:system_perf_init.bg-dex2oat-threads=*
+    setprop dalvik.vm.bg-dex2oat-threads ${system_perf_init.bg-dex2oat-threads}
+
+on property:system_perf_init.boot-dex2oat-threads=*
+    setprop dalvik.vm.boot-dex2oat-threads ${system_perf_init.boot-dex2oat-threads}

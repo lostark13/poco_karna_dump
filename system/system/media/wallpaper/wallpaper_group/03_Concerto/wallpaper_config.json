@@ -1,0 +1,31 @@
+{
+    "title": "协奏曲",
+    "titleResId": "wallpaper_group_concerto_title",
+    "subtitle":"George Stoyanov",
+    "subtitleResId":"wallpaper_group_concerto_subtitle",
+    "cardType": 1,
+    "count": 5,
+    "slideCount": 5,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./Concerto01.jpg",
+        "originPath": "./Concerto01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Concerto02.jpg",
+        "originPath": "./Concerto02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Concerto03.jpg",
+        "originPath": "./Concerto03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Concerto04.jpg",
+        "originPath": "./Concerto04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Concerto05.jpg",
+        "originPath": "./Concerto05.jpg",
+        "type": "wallpaper"
+    }]
+}

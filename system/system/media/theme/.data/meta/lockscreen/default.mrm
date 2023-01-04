@@ -1,0 +1,40 @@
+{
+  "localId": "2",
+  "onlineId": null,
+  "productId": null,
+  "downloadPath": "/system/media/theme/default.mtz",
+  "metaPath": "/system/media/theme/.data/meta/lockscreen/default.mrm",
+  "contentPath": "/system/media/lockscreen/lockscreen_000.jpg",
+  "rightsPath": "/system/media/theme/.data/rights/default.mra",
+  "onlinePath": null,
+  "status": 1,
+  "hash": "0",
+  "size": 0,
+  "updatedTime": 0,
+  "platform": 8,
+  "title": "POCO",
+  "description": null,
+  "author": "MIUI",
+  "designer": "MIUI",
+  "version": "1.0",
+  "downloadCount": 0,
+  "buildInThumbnails": [],
+  "buildInPreviews": [],
+  "titles": {
+    "en_US": "POCO"
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "0",
+      "metaPath": "/system/media/theme/.data/meta/theme/default.mrm",
+      "contentPath": "/system/media/theme/default.mtz",
+      "resourceCode": "theme",
+      "extraMeta": {}
+    }
+  ],
+  "subResources": [],
+  "screenRatio": "18:9",
+  "extraMeta": {}
+}

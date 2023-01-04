@@ -1,0 +1,231 @@
+{
+  "packageName": "com.wuba",
+  "forceDark": true,
+  "mainRule": 34,
+  "secondaryRule": 8,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.wuba.hybrid.CommonWebActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "SweetWebView",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "WubaWebView",
+              "parent": 1,
+              "index": -1,
+              "id": "content_webview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.secondhouse.house.detailv3.SecondDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ConstraintLayout",
+          "id": "viewSecondCoreVRV3Layout",
+          "forceDark": false,
+          "blackMask": true
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "id": "titleV3BackBtn",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "AppCompatImageButton",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": false,
+          "id": "callBarV4BrokerAvater"
+        },
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "callBarV4MainLayout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.aifang.newhouse.building.detail.BuildingDetailActivityV3",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.facebook.drawee.view.SimpleDraweeView",
+          "id": "vrbg",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        }
+      ]
+    },
+    {
+      "activityName": "com.wuba.car.activity.CarCategoryFragmentActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ConstraintLayout",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_layout"
+            }
+          ]
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.wuba.zxing.scan.activity.CaptureFragmentActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "FrameLayout",
+          "forceDark": false,
+          "id": "fragment_container_front"
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.aifang.home.NewHouseHomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": 0,
+              "id": "kanxianchangLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "SimpleDraweeView",
+              "parent": 0,
+              "index": 0,
+              "id": "themeRightBg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.secondhouse.house.detailv3.SecondDetailActivityV3",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.anjuke.android.app.secondhouse.house.detailv3.widget.SecondGalleryIndicatorViewV3",
+          "forceDark": false,
+          "id": "galleryV3Indicator"
+        },
+        {
+          "viewName":"androidx.constraintlayout.widget.ConstraintLayout",
+          "id":"viewSecondCoreVRV3Layout",
+          "forceDark":false
+        },
+        {
+          "viewName":"com.facebook.drawee.view.SimpleDraweeView",
+          "id":"callBarV4BookImage",
+          "forceDark":true,
+          "usage":103
+        },
+        {
+          "viewName":"com.facebook.drawee.view.SimpleDraweeView",
+          "id":"callBarV4WeiliaoImage",
+          "forceDark":true,
+          "usage":103,
+          "backgroundUsage":103
+        },
+        {
+          "viewName":"com.facebook.drawee.view.SimpleDraweeView",
+          "id":"callBarV4PhoneImage",
+          "forceDark":true,
+          "usage":103
+        },
+        {
+          "viewName":"androidx.appcompat.widget.AppCompatImageView",
+          "id":"titleV3BackBtn",
+          "forceDark":true,
+          "usage":103
+        },
+        {
+          "viewName":"androidx.appcompat.widget.AppCompatImageButton",
+          "forceDark":true,
+          "usage":103,
+          "conditions":[
+            {
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "titleV3TitleWrap"
+            }
+          ]
+        },
+        {
+          "viewName":"androidx.appcompat.widget.AppCompatImageButton",
+          "id":"titleV3ShareBtn",
+          "forceDark":true,
+          "usage":103
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {}
+  ]
+}

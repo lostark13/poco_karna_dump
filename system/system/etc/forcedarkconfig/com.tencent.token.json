@@ -1,0 +1,20 @@
+{
+  "packageName": "com.tencent.token",
+  "forceDark": true,
+  "mainRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.tencent.token.ui.LoginMsgActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.RelativeLayout",
+          "id": "login_msg_right",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        }
+      ]
+    }
+  ]
+}
